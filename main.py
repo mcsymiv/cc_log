@@ -4,15 +4,15 @@ from os.path import isfile, join
 from typing import List
 
 exchange_name = ["cexio", "bithumb", "binance", "ftx", "gateio", "huobi", "kucoin", "okex"]
-current_log_file_path = "./logs/current/connectors-log.log"
+current_log_file_path = "/Users/mcs/Development/scripts/logs/connectors-log.log"
 
 
 def gz_file_names() -> List[str]:
-    return [f for f in listdir("./logs/zipped") if isfile(join("./logs/zipped", f)) and ".gz" in f]
+    return [file for file in listdir("./logs/zipped") if isfile(join("./logs/zipped", file)) and ".gz" in file]
 
 
 def print_files():
-    only_files = [f for f in listdir("./logs/zipped") if isfile(join("./logs/zipped", f))]
+    only_files = [file for file in listdir("./logs/zipped") if isfile(join("./logs/zipped", file))]
     print(only_files)
 
 

@@ -1,0 +1,6 @@
+# custom scripts
+*.sh
+
+# logs file
+*.log
+*.gz
