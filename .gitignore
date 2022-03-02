@@ -2,5 +2,6 @@
 *.sh
 
 # logs file
+*.log.gz
 *.log
 *.gz
